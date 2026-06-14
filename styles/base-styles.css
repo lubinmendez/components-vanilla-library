@@ -32,13 +32,13 @@ ul {
   list-style: none;
 }
 
-/* Default customized visual selection box for Tab navigation for all focusable interactive elements. If you whant to override base focus-visible styles for a component. Make sure the component's stylesheet is loaded after global styles so it can replace default keyboard navigation styles. */
+/* Default customized visual selection box for Tab navigation for all focusable interactive elements. If you whant to override base focus-visible styles for a component. Make sure the component's stylesheet is loaded after base-styles so it can replace default keyboard navigation styles. */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--color-tertiary);
+  outline: 2px solid var(--color-neutral-900);
   outline-offset: 4px;
   border-radius: 4px;
 }
