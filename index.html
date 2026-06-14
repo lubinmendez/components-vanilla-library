@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./styles/base-styles.css">
   <!-- NAVBAR COMPONENT -->
   <link rel="stylesheet" href="./components/navbar/navbar.css">
+  <!-- CONTACT-FORM COMPONENT -->
+  <link rel="stylesheet" href="./components/contact-form/contact-form.css">
    <!-- FOOTER COMPONENT -->
   <link rel="stylesheet" href="./components/footer/footer.css">
   <title>Components vanilla library</title>
@@ -75,6 +77,25 @@
   </section>
 
   <!-- ==================================================
+  CONTACT-FORM COMPONENT 
+  ================================================== -->
+
+  <div class="contact-form-wrapper"> <!-- Only used to center the form. Remove this wrapper and its CSS if you don't need it centered. -->
+
+    <!-- If you don't want to use Formspree for email submissions, remove the action and method attributes -->
+    <form class="contact-form" action="https://formspree.io/f/xojzyvzw" method="POST">
+      <input type="text" placeholder="Full name" name="fullName" aria-label="Full name" autocomplete="name" required />
+
+      <input type="email" placeholder="Email address" name="email" aria-label="Email address" autocomplete="email" required />
+
+      <textarea placeholder="Write your message..." name="message" rows="6" aria-label="Write your message" required></textarea>
+
+      <button class="contact-form-btn" type="submit">Send message</button>
+    </form>
+
+  </div>
+
+  <!-- ==================================================
   FOOTER COMPONENT 
   ================================================== -->
 
@@ -114,8 +135,7 @@
     </nav>
 
   </footer>
-  
-  
+
   <!-- NAVBAR COMPONENT  -->
   <script src="./components/navbar/navbar.js"></script>
 </body>
