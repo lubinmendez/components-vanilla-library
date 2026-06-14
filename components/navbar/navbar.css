@@ -44,6 +44,7 @@ body {
   top: 0; /* Required to define vertical position when using fixed positioning */
   left: 0; /* Required to define horizontal position when using fixed positioning */
   width: 100%; /* Ensures it still spans full width since fixed removes normal block behavior */
+  z-index: 2000; /* Ensures navbar stays above other content */
 }
 
 /* Mobile menu starts off-screen and slides in when .show is added */
@@ -60,7 +61,7 @@ body {
   position: fixed;
   top: var(--navbar-height); 
   left: 0;
-  z-index: 1000;
+  z-index: 1000; /* Ensure mobile menu is above other content but below navbar (which has z-index: 2000) */
 
   /* size */
   padding: 55px 0 0 60px;
