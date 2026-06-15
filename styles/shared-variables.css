@@ -31,4 +31,8 @@
   /* Layout */
   --clickable-area-padding: 6px; /* Extra padding to improve click and tap targets */
   --container-horizontal-padding: 5%; /* Left and right padding for shared components */
+
+  /* Shape */
+  --border-radius: 8px;
+
 }

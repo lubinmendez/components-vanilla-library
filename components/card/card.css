@@ -12,7 +12,7 @@
 .card-image {
   width: 100%; /* Make the image take the full width of the card */ 
   height: auto; /* Maintain aspect ratio */
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   transition: filter 0.25s ease;
 }
 

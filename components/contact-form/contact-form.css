@@ -26,7 +26,7 @@
   width: 100%;
   padding: 0.9rem;
   border: 1px solid var(--color-neutral-400);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   outline: none; /* Remove browser's default outline to showcase custom border color on focus */
   color: var(--color-neutral-900); /* typed text should be dark/black */
 }
@@ -37,7 +37,7 @@
   background-color: var(--color-tertiary);
   color: white;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   font-size: var(--font-size-m);
   cursor: pointer;
   user-select: none;
