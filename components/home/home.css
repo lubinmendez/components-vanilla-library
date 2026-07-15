@@ -1,0 +1,37 @@
+/* ================================== */
+/*======= SOCIAL MEDIA LINKS ========*/
+/* ================================== */
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* align-items: center; */
+}
+
+.home-links a {
+  display: flex;
+  align-items: center;
+  padding: var(--clickable-area-padding); /* Increase clickable area for better UX: */
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+}
+
+/* Override base-styles for visual selection box for Tab navigation for this component */
+.home-links a:focus-visible {
+  outline-color: var(--color-neutral-900);
+}
+
+/* Restrict hover to devices with hover capability and fine pointer */
+@media (hover: hover) and (pointer: fine) {
+  .home-links a:hover .home-link-icon {
+    fill: var(--color-tertiary);
+  }
+}
+
+.home-link-icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color-neutral-900);
+  transition: fill 0.2s ease;
+}
