@@ -31,34 +31,10 @@
   color: var(--color-neutral-900); /* typed text should be dark/black */
 }
 
-.contact-form-btn {
-  align-self: center;
-  padding: 0.9rem 1.5rem;
-  background-color: var(--color-tertiary);
-  color: white;
-  border: none;
-  border-radius: var(--border-radius);
-  font-size: var(--font-size-m);
-  cursor: pointer;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
-}
-
 /* Transitions for smooth visual feedback on interactions: */
 .contact-form input,
 .contact-form textarea {
   transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.contact-form-btn {
-  transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-/* Hover */ 
-@media (hover: hover) and (pointer: fine) { /*Restrict hover to devices with hover capability and fine pointer */
-  .contact-form-btn:hover {
-    background-color: var(--color-tertiary-dark);
-  }
 }
 
 /* Focus */
@@ -78,15 +54,6 @@ This stylesheet is loaded after base-styles so it can replace default keyboard n
 .contact-form input:focus-visible,
 .contact-form textarea:focus-visible {
   border-color: var(--color-tertiary-dark);
-}
-.contact-form-btn:focus-visible {
-  outline: none;
-  background-color: var(--color-tertiary-dark);
-}
-
-/* Active*/
-.contact-form-btn:active {
-  transform: scale(0.98);
 }
 
 /* Show error border only after the user has started typing (placeholder is not shown) and the input is invalid */
