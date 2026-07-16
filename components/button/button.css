@@ -1,6 +1,9 @@
+/* Place this button inside a container.
+   So the container controls its alignment. */
+
 .button {
-  align-self: center;
-  padding: 0.9rem 1.5rem;
+  width: fit-content;
+  padding: 0.9rem 3rem;
   background-color: var(--color-tertiary);
   color: white;
   border: none;
