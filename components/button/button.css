@@ -5,13 +5,17 @@
   width: fit-content;
   padding: 0.9rem 3rem;
   background-color: var(--color-tertiary);
-  color: white;
   border: none;
   border-radius: var(--border-radius);
   font-size: var(--font-size-m);
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
+}
+
+.button,
+.button:visited {
+  color: var(--color-neutral-100);
 }
 
 .button {
