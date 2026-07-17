@@ -9,42 +9,7 @@
   gap: 16px;
 }
 
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.footer-link-icon {
-  width: 30px;
-  height: 30px;
-  fill: var(--color-neutral-100);
-  transition: fill 0.2s ease;
-}
-
-.footer-links a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: var(--clickable-area-padding); /* Increase clickable area for better UX */
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
-}
-
-/* Override base-styles for visual selection box for Tab navigation for this component */
-.footer-links a:focus-visible {
-  outline-color: var(--color-neutral-100);
-}
-
-/* Restrict hover to devices with hover capability and fine pointer */
-@media (hover: hover) and (pointer: fine) {
-  .footer-links a:hover .footer-link-icon {
-    fill: var(--color-tertiary);
-  }
-}
-
 /* Component mediaqueries */
-
 /* 768... Tablet-desktop */
 @media (min-width: 768px) {
   .footer {
