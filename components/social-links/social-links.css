@@ -4,14 +4,13 @@
   gap: 30px;
 }
 
-.social-link-icon {
+.social-links-icon {
   width: 30px;
   height: 30px;
-  fill: var(--color-neutral-100);
   transition: fill 0.2s ease;
 }
 
-.social-links-list a {
+.social-links-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,14 +19,38 @@
   -webkit-tap-highlight-color: transparent; /* Remove mobile tap highlight */
 }
 
-/* Override base-styles for visual selection box for Tab navigation for this component */
-.social-links-list a:focus-visible {
+/* Restrict hover to devices with hover capability and fine pointer */
+@media (hover: hover) and (pointer: fine) {
+  .social-links-link:hover .social-links-icon {
+    fill: var(--color-tertiary);
+  }
+}
+
+/* ======= Component variants ======= */
+
+/* Color variants */
+.social-links-on-light-bg .social-links-icon {
+  fill: var(--color-neutral-900);
+}
+
+.social-links-on-dark-bg .social-links-icon {
+  fill: var(--color-neutral-100);
+}
+
+/* Override base-styles for visual selection box for Tab navigation for this component depending on the background color*/
+.social-links-on-dark-bg .social-links-link:focus-visible {
   outline-color: var(--color-neutral-100);
 }
 
-/* Restrict hover to devices with hover capability and fine pointer */
-@media (hover: hover) and (pointer: fine) {
-  .social-links-list a:hover .social-link-icon {
-    fill: var(--color-tertiary);
-  }
+.social-links-on-light-bg .social-links-link:focus-visible {
+  outline-color: var(--color-neutral-900);
+}
+
+/* Direction variants */
+.social-links-list-horizontal {
+  flex-direction: row;
+}
+
+.social-links-list-vertical {
+  flex-direction: column;
 }
