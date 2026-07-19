@@ -65,3 +65,15 @@
   }
 }
 
+/* Home: social links orientation */
+@media (max-width: 767px) { /* Mobile */
+  .home-container .social-links-list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) { /* Tablet-desktop */
+  .home-container .social-links-list {
+    flex-direction: row;
+  }
+}
