@@ -5,6 +5,7 @@
 .home-button-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /*======= Layout mobile first ========*/
@@ -15,7 +16,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-content: center;
-
 }
 
 .home-title {
