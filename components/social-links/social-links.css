@@ -1,3 +1,7 @@
+.social-links {
+width: fit-content;
+}
+
 .social-links-list {
   display: flex;
   align-items: center;
