@@ -81,4 +81,8 @@
   .home-container .social-links-list {
     flex-direction: row;
   }
+
+  .home-container {
+    gap: 8vh;
+  }
 }
