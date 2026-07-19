@@ -63,6 +63,7 @@
   .home-button-container {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+    justify-self: start;
   }
 }
 
