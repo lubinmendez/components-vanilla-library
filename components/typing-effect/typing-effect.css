@@ -1,8 +1,8 @@
 /* ===== CURSOR BLINK EFFECT =====*/
-.typing-text {
+.cursor-blink {
   border-right: 2px solid currentColor; /* Simulate a cursor (border in the right side) */
   /* animation-name / duration / timming-function / iteration-count */
-  animation: blink 1s step-end infinite; 
+  animation: blink 1s step-end infinite;  
 }
 
 @keyframes blink {
