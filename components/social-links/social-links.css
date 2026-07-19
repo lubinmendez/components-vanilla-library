@@ -1,3 +1,7 @@
+/* Social links component:
+   - Default layout is row direction.
+   - Use social-links-on-light-bg or social-links-on-dark-bg to adjust the icon color and the visible focus outline for keyboard navigation.
+*/
 .social-links {
 width: fit-content;
 }
@@ -6,6 +10,7 @@ width: fit-content;
   display: flex;
   align-items: center;
   gap: 30px;
+  flex-direction: row; /* Default to row direction */
 }
 
 .social-links-icon {
@@ -40,7 +45,6 @@ width: fit-content;
 .social-links-on-dark-bg .social-links-icon {
   fill: var(--color-neutral-100);
 }
-
 /* Override base-styles for visual selection box for Tab navigation for this component depending on the background color*/
 .social-links-on-dark-bg .social-links-link:focus-visible {
   outline-color: var(--color-neutral-100);
@@ -48,13 +52,4 @@ width: fit-content;
 
 .social-links-on-light-bg .social-links-link:focus-visible {
   outline-color: var(--color-neutral-900);
-}
-
-/* Direction variants */
-.social-links-list-horizontal {
-  flex-direction: row;
-}
-
-.social-links-list-vertical {
-  flex-direction: column;
 }
