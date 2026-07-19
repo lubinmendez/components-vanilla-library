@@ -1,0 +1,12 @@
+/* ===== CURSOR BLINK EFFECT =====*/
+.typing-text {
+  border-right: 2px solid currentColor; /* Simulate a cursor (border in the right side) */
+  /* animation-name / duration / timming-function / iteration-count */
+  animation: blink 1s step-end infinite; 
+}
+
+@keyframes blink {
+  0% { border-color: currentColor; }
+  50% { border-color: transparent; }
+  100% { border-color: currentColor; }
+}
