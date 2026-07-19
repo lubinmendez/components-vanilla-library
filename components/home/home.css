@@ -9,10 +9,13 @@
 
 /*======= Layout mobile first ========*/
 .home-container {
-  padding: 50px var(--container-horizontal-padding);
-  gap: 25px;
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 3vh var(--container-horizontal-padding);
+  gap: 3vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-content: center;
+
 }
 
 .home-title {
