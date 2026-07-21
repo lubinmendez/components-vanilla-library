@@ -34,7 +34,7 @@ body {
   background-color: var(--color-primary);
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
   height: var(--navbar-height);
-  padding: 0 var(--container-horizontal-padding);
+  padding-inline: calc(var(--container-horizontal-padding) - var(--clickable-area-padding)); /* The clickable-area padding makes the navbar content feel slightly inset, so the horizontal spacing is reduced to keep the layout visually aligned. */
   display: flex;
   justify-content: space-between;
   align-items: center;
