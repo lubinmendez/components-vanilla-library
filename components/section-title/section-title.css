@@ -1,0 +1,5 @@
+.section-title {
+  border-bottom: 3px solid var(--color-tertiary);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+}
