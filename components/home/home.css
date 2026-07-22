@@ -10,8 +10,6 @@
 
 /*======= Layout mobile first ========*/
 .home-container {
-  padding-block: 3vh;
-  min-height: calc(100vh - var(--navbar-height));
   gap: 3vh;
   display: grid;
   grid-template-columns: 1fr 2fr;

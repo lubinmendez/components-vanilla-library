@@ -1,20 +1,14 @@
 .about-container {
-	min-height: calc(100vh - var(--navbar-height));
-
-  display: flex;
+	display: flex;
 	flex-direction: column;
-
 	justify-content: center;
 	align-items: center;
-
 	gap: 30px;
 }
 
 .about-text {
 	max-width: 65ch;
-
 	padding: 20px;
-
 	border-radius: var(--border-radius);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }

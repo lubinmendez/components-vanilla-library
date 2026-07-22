@@ -47,3 +47,8 @@ select:focus-visible {
 .page-content {
   padding-inline: var(--container-horizontal-padding);
 }
+
+/* Cover the viewport height minus the height of the navbar. This is useful for sections that need to fill the entire viewport height, but not overlap with the navbar. */
+.viewport-container {
+	min-height: calc(100vh - var(--navbar-height));
+}
