@@ -1,10 +1,6 @@
-.about-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+/* .about-container {
 	gap: 30px;
-}
+} */
 
 .about-text {
 	max-width: 65ch;
@@ -12,4 +8,3 @@
 	border-radius: var(--border-radius);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-

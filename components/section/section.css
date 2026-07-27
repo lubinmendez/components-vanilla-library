@@ -1,0 +1,19 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+	align-items: center;
+}
+
+.section-title {
+  border-bottom: 3px solid var(--color-tertiary);
+  padding-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.section-content {
+    flex: 1; /* Takes the rest of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
