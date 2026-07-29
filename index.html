@@ -16,8 +16,10 @@
   <link rel="stylesheet" href="./components/button/button.css">
   <!-- HOME COMPONENT -->
   <link rel="stylesheet" href="./components/home/home.css">
-  <!-- SECTION COMPONENT -->
-  <link rel="stylesheet" href="./components/section/section.css">
+  <!-- SECTION-TITLE COMPONENT -->
+  <link rel="stylesheet" href="./components/section-title/section-title.css">
+  <!-- SECTION-LAYOUT -->
+  <link rel="stylesheet" href="./components/section-layout/section-layout.css">
   <!-- ABOUT COMPONENT -->
   <link rel="stylesheet" href="./components/about/about.css">
   <!-- CARD COMPONENT -->
@@ -67,7 +69,7 @@
   <main class="page-content">
 
     <section id="home">
-  <!-- ==================================================
+    <!-- ==================================================
     HOME COMPONENT
     ================================================== -->
 
@@ -132,13 +134,24 @@
     <!-- ==================================================
     ABOUT COMPONENT 
     ================================================== -->
-    <section id="about" class="section viewport-container">
 
+    <!-- ==================================================
+    SECTION-LAYOUT COMPONENT
+
+    Structure:
+    - section-layout (parent)
+    - section-title (child)
+    - section-layout-content (child)
+    ================================================== -->
+    <section id="about" class="section-layout viewport-container">
+
+      <!-- ==================================================
+      SECTION-TITLE COMPONENT 
+      ================================================== -->
       <h2 class="section-title">About</h2>
-
       <!-- ================================================== -->
 
-      <div class="section-content">
+      <div class="section-layout-content">
         <div class="about-text">
           <p>I’m a Multimedia Engineering graduate with a passion for building software solutions that combine technology, functionality, and user experience. My background in web development and digital design has allowed me to create interactive applications while developing a strong foundation in modern frontend and backend technologies.</p>
 
@@ -151,15 +164,30 @@
     </section>
     <!-- ======================================= -->
 
-    <section id="projects" class="section viewport-container">
+    <!-- ==================================================
+    PROJECTS COMPONENT 
+    ================================================== -->
 
+    <!-- ==================================================
+    SECTION-LAYOUT COMPONENT
+
+    Structure:
+    - section-layout (parent)
+    - section-title (child)
+    - section-layout-content (child)
+    ================================================== -->
+    <section id="projects" class="section-layout viewport-container">
+
+        <!-- ==================================================
+        SECTION-TITLE COMPONENT 
+        ================================================== -->
         <h2 class="section-title">Projects</h2>
 
         <!-- ==================================================
         CARD COMPONENT 
         ================================================== -->
 
-        <div class="section-content">
+        <div class="section-layout-content">
 
           <div class="card-container">
 
@@ -192,30 +220,59 @@
 
     </section>
 
-    <section id="skills">
 
-      <div class="viewport-container">
+    <!-- ==================================================
+    SECTION-LAYOUT COMPONENT
 
+    Structure:
+    - section-layout (parent)
+    - section-title (child)
+    - section-layout-content (child)
+    ================================================== -->
+
+    <section id="skills" class="section-layout viewport-container">
+
+      <!-- ==================================================
+      SKILLS COMPONENT 
+      ================================================== -->
+
+        <!-- ==================================================
+        SECTION-TITLE COMPONENT 
+        ================================================== -->
         <h2 class="section-title">Skills</h2>
-
         <!-- ================================================== -->
+
+        <div class="section-layout-content">
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat repellendus voluptas consequatur commodi cumque obcaecati doloribus cupiditate consectetur et. Perspiciatis et, unde laudantium, tenetur minus nisi voluptate perferendis dolore deleniti nemo eligendi blanditiis earum necessitatibus fugiat repudiandae obcaecati facilis quia commodi quo fuga vero sapiente eum voluptates? Aperiam culpa voluptatibus delectus dolorem commodi totam excepturi quis molestias, neque debitis odit distinctio voluptatum </p>
 
-      </div>
+        </div>
+
     </section>
 
-    <section id="contact">
+    <!-- ==================================================
+    SECTION-LAYOUT COMPONENT
 
-      <div class="viewport-container">
+    Structure:
+    - section-layout (parent)
+    - section-title (child)
+    - section-layout-content (child)
+    ================================================== -->
 
-        <h2 class="section-title">Contact</h2>
-    
+    <section id="contact" class="section-layout viewport-container">
+
+      <!-- ==================================================
+      SECTION-TITLE COMPONENT 
+      ================================================== -->
+      <h2 class="section-title">Contact</h2>
+      <!-- ================================================== -->
+
+      <div class="section-layout-content">
+
         <!-- ==================================================
         CONTACT-FORM COMPONENT 
         ================================================== -->
-
-        <div class="contact-form-wrapper"> <!-- Only used to center the form. Remove this wrapper and its CSS if you don't need it centered. -->
+        <div class="contact-form-container"> <!-- Only used to center the form. Remove this wrapper and its CSS if you don't need it centered. -->
 
           <!-- If you don't want to use Formspree for email submissions, remove the action and method attributes -->
           <form class="contact-form" action="https://formspree.io/f/xojzyvzw" method="POST">
@@ -227,19 +284,18 @@
 
 
             <div class="contact-form-button-container"> <!-- Container used to align the next button -->
-              <!-- ==================================================
-              BUTTON COMPONENT 
-              ================================================== -->
-              <button class="button" type="submit">Send message</button>
+                <!-- ==================================================
+                BUTTON COMPONENT 
+                ================================================== -->
+                <button class="button" type="submit">Send message</button>
 
-            </div>
+              </div>
 
-          </form>
+            </form>
 
         </div>
 
       </div>
-
     </section>
 
   </main>

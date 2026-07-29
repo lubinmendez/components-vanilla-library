@@ -1,12 +1,14 @@
 /* Contact form — without media queries, responsive via width: min(100%, 600px); avoids layout jumps. */
 
-/* Uses .contact-form-wrapper div container to center the form; remove wrapper (and its CSS) if you don't want centered layout. */
+/* Uses .contact-form-container div container to center the form; remove wrapper (and its CSS) if you don't want centered layout. */
 
-.contact-form-wrapper {
+.contact-form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  width: 100%;
   padding: 2rem;
+  
 }
 
 .contact-form {
